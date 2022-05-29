@@ -1,0 +1,24 @@
+<h1>Password Generator</h1>
+
+<div class="container text-center">
+    <form action="password">
+        <select name="length">
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8" selected="Select">8</option>
+            <option value="9">9</option>
+            </select>
+        <br>
+        <input type="checkbox" name="uppercase">Uppercase Password
+        <br>
+        <input type="checkbox" name="special">Special Characters
+        <br>
+        <input type="checkbox" name="numbers">Number Characters
+        <br>    
+        <input type="submit" value="Generate Password">
+    </form>
+
+    <a action="" href="{% url 'home' %}">Home</a>
+
+    <a href="{% url 'about'%}">About us</a> 
+</div> 
